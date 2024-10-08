@@ -1,0 +1,152 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+
+  border: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Add this line */
+    flex-direction: column;
+    background-color: #1e2129;
+    min-height: 100vh; /* Change from 90vh to 100vh */
+    width: 100vw;
+    color: #76787e;
+    gap: 10px;
+}
+
+#TdText{
+    text-align: center;
+}
+
+.todo-Wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    gap: 20px;
+    width: 100%; 
+    max-width: 300px;
+}
+
+.item{
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+/* CheckBox */
+.checkbox {
+  width: 2em;
+  height: 2em;
+  border-radius: 5px;
+  background-color: #2a2d36;
+  border: 2px solid #76787e;
+  vertical-align: middle;
+  
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkbox:checked {
+  background-color: #7161e6;
+  border-color: #7161e6;
+}
+
+.checkbox:hover {
+  border-color: #7161e6;
+}
+
+.checkbox:checked::after {
+  content: '\2714';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1em;
+  height: 100%;
+}
+
+/* bottom-buttons */
+
+.bottom-buttons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bottom-buttons button{
+    padding: 1.3em;
+    border-radius: 10px;
+    background-color: #7161e6;
+    cursor: pointer;
+    margin-top: 15px; 
+}
+
+/* Updated button colors */
+#Delete {
+    background-color: #e76958; /* Red */
+}
+
+#Create {
+    background-color: #7161e6; /* Green */
+}
+
+#Rest {
+    background-color: #9861e6; /* Blue */
+}
+
+
+.bottom-buttons #Delete:hover{
+    background-color: #da7568ca !important; 
+ }
+
+ .bottom-buttons #Create:hover{
+    background-color: #6f61d9b9 !important; 
+ }
+
+.bottom-buttons #Rest:hover{
+   background-color: #9e6fdec2 !important; 
+}
+
+/* Input Name */
+
+#TaskNameInput {
+    height: 3em;
+    width: 330px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2a2d36;
+    color: #ffffff;
+    padding: 0 15px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#TaskNameInput:focus {
+    outline: none;
+    background-color: #32363f;
+    box-shadow: 0 0 0 2px rgba(113, 97, 230, 0.5);
+}
+
+#TaskNameInput::placeholder {
+    color: #76787e;
+}
