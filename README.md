@@ -10,12 +10,12 @@
 
 
 ## Why
-Have you ever used a Todo app and felt like it was just too much, to many fetures no one uses and a hole load of clutter making it complicted for no reason, well Thats why I made this app. This app is what I wanted from a todo app, something that is simple fast lightweight and private without usless fetures, clutter, telmpetory. 
+Have you ever used a Todo app and felt like it was just too much, to many fetures no one uses and a hole load of clutter making it complicted for no reason, well Thats why I made SimTodo. SimTodo is what I wanted from a todo app, something that is: (fast, simpe, lightweight and private, without usless fetures, clutter, telmpetory or any other nonesense). 
 
 ![screenshot](https://simtodo.github.io/simtodo-assets/screenshot.png)
 
 
-> ### This App is Frontend only  
+> ### SimTodo is Frontend only  
 > Yes this app in nothing more than a bit of (html css js) thats means We dont steal your data or have "telmpetory" and that also makes SimTodo waay faster because we dont need to load anything from the backend.
 
 
